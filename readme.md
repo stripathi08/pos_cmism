@@ -15,6 +15,7 @@ Running the code
 - Sample Test File name : domainName_langPair_Test_Raw.txt, FB_HI_EN_Test_Raw.txt
 - Make sure to add the read files with different names in the *main_train_frame* in **main.py**
 - Enter the language pair, mode and Classifier mode in main.py. Classifier modes are **crf++** and **pycrf**.
+- Make suitable file name changes in **transforms.py**.
 - For final testing, we only used the **crf++** module as their CV results were better than pycrfsuite.
 - Run **main.py**.
 

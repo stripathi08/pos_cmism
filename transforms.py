@@ -884,7 +884,7 @@ class crf_plus_format:
     def print_final_test(self, X_e, L_e):
         os.chdir('./Resources')
         try:
-            os.remove('./crf_plus/FB_TE__UNCONS_EN_Test_FN.txt')
+            os.remove('./crf_plus/***.txt')
             print 'Old output found. Creating final output file.'
         except:
             print 'Creating output file.'
@@ -899,7 +899,7 @@ class crf_plus_format:
                 pr_idx +=1
             if len(rule_lbl) == 0:
                 for token_idx in xrange(len(utter)):
-                    with open('./crf_plus/FB_TE__UNCONS_EN_Test_FN.txt','a') as flp:
+                    with open('./crf_plus/***.txt','a') as flp:
                         if not token_idx == len(utter)-1:
                             flp.write("{0}\t{1}\t{2}".format(utter[token_idx], lang[token_idx], y_pr[token_idx]))
                             flp.write("\n")
@@ -914,7 +914,7 @@ class crf_plus_format:
                 real_idx = 0
                 for token_idx in range(0, (len(rule_lbl) + len(position_lbl))):
                     if token_idx in position_lbl:
-                        with open('./crf_plus/FB_TE__UNCONS_EN_Test_FN.txt', 'a') as flp:
+                        with open('./crf_plus/***.txt', 'a') as flp:
                             if not token_idx == len(rule_lbl) + len(position_lbl) - 1:
                                 # assert flp.write("{0}\t{1}\t{2}".format(utter[real_idx], lang[real_idx], y_pr[real_idx])), 'ds'
                                 flp.write("{0}\t{1}\t{2}".format(utter[real_idx], lang[real_idx], y_pr[real_idx]))
@@ -926,7 +926,7 @@ class crf_plus_format:
                                 real_idx += 1
                     elif token_idx in ids:
                         indt = ids.index(token_idx)
-                        with open('./crf_plus/FB_TE__UNCONS_EN_Test_FN.txt', 'a') as flp:
+                        with open('./crf_plus/***.txt', 'a') as flp:
                             if not token_idx == len(rule_lbl) + len(position_lbl) - 1:
                                 flp.write("{0}\t{1}\t{2}".format(utter_r[indt], lang_r[indt], pred_r[indt]))
                                 flp.write("\n")
