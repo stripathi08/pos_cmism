@@ -21,8 +21,11 @@ Running the code
 - For final testing, we only used the **crf++** module as their CV results were better than pycrfsuite.
 - Run **main.py**.
 
+Citing the paper
+-------------------
+- If you are using the code for research purposes, please cite the paper. **SMPOST: Parts of Speech Tagger for Code-Mixed Indic Social Media Text**
+
 Reporting Doubts and Errors
 -------------------
 - For any queries, please contact me at **stripathi1770@gmail.com**.
-
 - Please refer to the publication for detailed results.
