@@ -4,7 +4,7 @@ POS Tagging for CMISM, ICON 2016
 
 Please find the details of the shared task [here](http://ltrc.iiit.ac.in/icon2016/).
 
-**Update** : [SMPOST Python Module](https://gihthub.com/stripathi08/smpost) available now.
+**Update** : [SMPOST Python Module](https://github.com/stripathi08/smpost) available now.
 
 ----------
 
